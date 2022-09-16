@@ -37,6 +37,7 @@ jobs:
          run: |
            cd repo
            docker build . -t repo
+           docker run repo
        - name: "Re-Run"
          continue-on-error: true
          run: |
